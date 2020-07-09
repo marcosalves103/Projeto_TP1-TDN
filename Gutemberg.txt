@@ -1,0 +1,23 @@
+Var
+   TotalEleitores, VotoBranco, VotoValido, VotoNulo: inteiro
+    porcenbranco, porcennulo, porcenvalido : real
+    
+Inicio
+escreval ("Digite os números totais de eleitos:")
+leia (totaleleitores)
+escreval ("Digite a quantidade de votos brancos")
+leia (VotoBranco)
+Escreval ("Digite os números totais de votos nulos")
+leia (votonulo)
+Escreval ("Digite os números totais de votos válidos")
+leia (votovalido)
+    porcenbranco <- 100*VotoBranco/totalEleitores
+    porcennulo <- 100*Votonulo/Votonulo
+    porcenvalido <- 100*VotoBranco/Votovalido
+    
+    Escreval("Porcentagem de votos Brancos:", porcenbranco, "%")
+    Escreval("Porcentagem de votos Nulos:", porcennulo, "%")
+    Escreval("Porcentagem de votos Brancos:", porcenvalido, "%")
+
+
+Fimalgoritmo
