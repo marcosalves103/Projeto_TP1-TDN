@@ -4,14 +4,37 @@
 o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que
 cada um representa em relação ao total de eleitores.
 
-2) O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem
-do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do
-distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo
-de fábrica de um carro, calcular e escrever o custo final ao consumidor.
+Algoritmo "semnome"
+//  
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 08/07/2020
+Var
+// Seção de Declarações das variáveis 
+eleitores, nulos, brancos, validos: inteiro
+pnulos, pbrancos, pvalidos: real
 
-3) Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,
-mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas.
-Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas
-vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("Digite o total de votos nulos: ")
+leia(nulos)
 
-4) Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius
+escreval("Digite o total de votos brancos: ")
+leia(brancos)
+
+escreval("Digite o total de votos validos: ")
+leia(validos)
+
+eleitores <- (nulos+brancos+validos)
+
+pnulos<-(100*nulos)/eleitores
+pbrancos<-(100*brancos)/eleitores
+pvalidos<-(100*validos)/eleitores
+
+escreval("A porcentagem de votos nulos foram: ",pnulos, "%")
+escreval("A porcentagem de votos brancos foram: ",pbrancos, "%")
+escreval("A porcentagem de votos validos foram: ",pvalidos, "%")
+escreval("O total de eleitores são: ",eleitores)
+
+Fimalgoritmo
