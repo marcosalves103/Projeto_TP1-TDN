@@ -1,9 +1,10 @@
 Algoritmo "Eleitores"
-// Descrição   : Calcula porcentagem de votos
+
+// DescriÃ§Ã£o   : Calcula porcentagem de votos
 // Autor(a)    : Maria Luiza Cruvinel
 // Data atual  : 08/07/2020
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
   eleitores: inteiro
   votb, votv, votn: real
@@ -11,9 +12,9 @@ Var
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
  escreval ("    -------------------    ")
- escreval ("   |   Eleições 2020   |   ")
+ escreval ("   |   EleiÃ§Ãµes 2020   |   ")
  escreval ("    -------------------    ")
  escreval ("")
  escreva ("   Digite o Total de Eleitores  ")
@@ -21,7 +22,7 @@ Inicio
  
  escreval ("")
  
- escreva ("   Digite a Quantidade de Votos Válidos:  ")
+ escreva ("   Digite a Quantidade de Votos VÃ¡lidos:  ")
  leia (votv)
  
  escreval ("")
@@ -39,20 +40,52 @@ Inicio
  escreval ("")
 
  valido <- (100*votv)/eleitores
- escreva ("   A Porcentagem de Votos Válidos é de ", valido, "%")
+ escreva ("   A Porcentagem de Votos VÃ¡lidos Ã© de ", valido, "%")
     escreval ("")
  branco <- (100*votb)/eleitores
- escreva ("   A Porcentagem de Votos em Branco é de ", branco, "%")
+ escreva ("   A Porcentagem de Votos em Branco Ã© de ", branco, "%")
     escreval ("")
  nulo <- (100*votn)/eleitores
- escreva ("   A Porcentagem de Votos Nulo é de ", nulo, "%")
+ escreva ("   A Porcentagem de Votos Nulo Ã© de ", nulo, "%")
 
     escreval ("")
     escreval ("")
  
  escreval ("    ----------------------    ")
- escreval ("   | Fim das Eleições 2020|   ")
+ escreval ("   | Fim das EleiÃ§Ãµes 2020|   ")
  escreval ("    ----------------------    ")
 
 
  Fimalgoritmo
+=======
+//  
+//  
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
+// Autor(a)    : Maria Eduarda AraÃºjo
+// Data atual  : 08/07/2020
+Var
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
+    total, vb, vn, vv : inteiro
+    porvb, porvn, porvv : real
+
+Inicio
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
+     escreval("Digite o total de eleitores: ")
+     leia(total)
+     escreval("Digite o numero de votos branco :")
+     leia(vb)
+     escreval("Digite o numero de votos nulos: ")
+     leia(vn)
+     escreval("Digite o numero de votos validos: ")
+     leia(vv)
+     
+     
+     porvv <- 100*vb/total
+     porvn <- 100*vn/total
+     porvv <- 100*vv/total
+     
+     escreval("Porcentagem de votos brancos: ", porvb, "&")
+     escreval("Porcentagem de votos nulos: ", porvn, "&")
+     escreval("Porcentagem de votos validos: ", porvv, "&")
+Fimalgoritmo
+
