@@ -1,0 +1,18 @@
+Algoritmo "semnome"
+//  
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 12/07/2020
+Var
+// Seção de Declarações das variáveis 
+a:inteiro
+x:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("digite o grau em Fahrenheit: ")
+leia (a)
+x <-(a-32)/1,8
+escreval ("o grau ", a," de fahrenheit para celsius fica ", x, " graus celsius" )
+
+Fimalgoritmo
