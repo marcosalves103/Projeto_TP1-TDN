@@ -1,0 +1,41 @@
+Algoritmo "semnome"
+//  
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 12/07/2020
+Var
+// Seção de Declarações das variáveis 
+a,x:inteiro
+saFi,comissao:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+a<-1
+escreval ("seu salario fixo é R$900")
+escreval ("você recebe R$100 de comissão por venda")
+escreval ("você recebe 5% do valor de um carro vendido")
+escreval()
+enquanto (a <>0) faca
+escreva ("quantas vendas você fez? ")
+leia (a)
+x<-a
+escreval()
+se (a<>0) entao
+para a de a ate 1 passo -1 faca
+escreva("digite valor da venda: R$")
+leia (comissao)
+comissao <- (comissao*5)/100
+escreval ("você recebera R$", comissao, " de comissão por essa venda" )
+escreval ()
+saFi <- saFi+comissao
+fimpara
+a<-0
+fimse
+fimenquanto
+escreval()
+escreval("você vendeu no total ", x, " carro(s)")
+escreva ("seu salario final é de R$",900+100*x+saFI)
+
+
+Fimalgoritmo
