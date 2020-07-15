@@ -1,0 +1,25 @@
+Algoritmo "semnome"
+//  
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 12/07/2020
+Var
+// Seção de Declarações das variáveis 
+fab,imp,dist: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva ("digite o valor de fabrica do carro: R$")
+leia (fab)
+escreval()
+
+dist<- (fab*28)/100
+imp <- (fab*45)/100
+
+escreval ("28% da distribuidora: R$", dist)
+escreval("45% de impostos: R$", imp )
+escreval()
+escreval("valor final: R$", fab+imp+dist)
+
+Fimalgoritmo
