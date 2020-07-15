@@ -1,17 +1,47 @@
 Algoritmo "semnome"
 //  
 //  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 15/07/2020
 Var
-// Seção de Declarações das variáveis 
+
+fabri, distr, imposto: real
+x: logico
+
+
+Inicio
+imposto <- 45/100
+distr <- 28/100
+
+Escreval("Por favor insira o valor de fÃ¡brica do veÃ­culo.")
+
+Enquanto x = falso faca
+
+  Escreva("Valor: ")
+  Leia(fabri)
+
+  Escreval("")
+
+  Se fabri > 0 entao
+    Escreval("O valor final do carro com", imposto*100, "% de impostos")
+    Escreval("e", distr*100, "% de percentual de distribuidor Ã©:")
+    Escreval("R$", fabri*(1+imposto+distr), " (", (imposto+distr)*100, "% Ã  mais )")
+    x <- verdadeiro
+  Senao
+    Escreval("Valor InvÃ¡lido, digite um preÃ§o possÃ­vel:")
+  Fimse
+
+Fimenquanto
+
+
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 cf,distrib,imposto:real
 consumidor:real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-   escreval("qual é o preço de fábrica do carro ?")
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
+   escreval("qual Ã© o preÃ§o de fÃ¡brica do carro ?")
    leia(cf)
    
    distrib <- (28 * cf)/100
@@ -20,15 +50,16 @@ Inicio
    
    consumidor <- (cf + distrib + imposto)
    
-   escreval("A taxa de impostos é 45%, resultando em: ", imposto)
+   escreval("A taxa de impostos Ã© 45%, resultando em: ", imposto)
    escreval("")
    
-   escreval("a taxa do distribuidor é de 28%, resultando em: ", distrib)
+   escreval("a taxa do distribuidor Ã© de 28%, resultando em: ", distrib)
    escreval("")
    
-   escreval("o Valor que o consumidor terá que pagar é: ", consumidor)
+   escreval("o Valor que o consumidor terÃ¡ que pagar Ã©: ", consumidor)
    
    
    
+
 
 Fimalgoritmo
