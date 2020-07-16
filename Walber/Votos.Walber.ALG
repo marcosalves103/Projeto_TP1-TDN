@@ -1,0 +1,34 @@
+Algoritmo "semnome"
+//  
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 08/07/2020
+Var
+// Seção de Declarações das variáveis 
+eleitores, nulos, brancos, validos: inteiro
+pnulos, pbrancos, pvalidos: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("Digite o total de votos nulos: ")
+leia(nulos)
+
+escreval("Digite o total de votos brancos: ")
+leia(brancos)
+
+escreval("Digite o total de votos validos: ")
+leia(validos)
+
+eleitores <- (nulos+brancos+validos)
+
+pnulos<-(100*nulos)/eleitores
+pbrancos<-(100*brancos)/eleitores
+pvalidos<-(100*validos)/eleitores
+
+escreval("A porcentagem de votos nulos foram: ",pnulos, "%")
+escreval("A porcentagem de votos brancos foram: ",pbrancos, "%")
+escreval("A porcentagem de votos validos foram: ",pvalidos, "%")
+escreval("O total de eleitores são: ",eleitores)
+
+Fimalgoritmo
